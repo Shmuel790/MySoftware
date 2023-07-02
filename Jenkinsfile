@@ -2,9 +2,13 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Click') {
             steps {
                 sh 'python click.py'
+            }
+        }
+        stage('Welcome') {
+            steps {
                 sh 'python welcome.py'
             }
         }
